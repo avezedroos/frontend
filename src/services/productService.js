@@ -1,7 +1,8 @@
 // src/services/productService.js
 import axios from "axios";
+const baseUrl = process.env.REACT_APP_API_URL;
 
-const API_BASE_URL = "http://localhost:5000/api/products"; // replace with your API endpoint
+const API_BASE_URL = `${baseUrl}/api/products`; // replace with your API endpoint
 
 /**
  * Fetch products from server with pagination

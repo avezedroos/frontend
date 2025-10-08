@@ -1,7 +1,7 @@
 // src/store/productSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-const baseUrl = process.env.REACT_APP_API_URL;
+const baseUrl = "https://template-marketplace-backend.onrender.com/";
 // const API_URL = "http://localhost:5000/api/products";
 console.log("API Base URL:", baseUrl);
 const API_URL = `${baseUrl}/api/products`;

@@ -1,6 +1,6 @@
 // src/services/productService.js
 import axios from "axios";
-const baseUrl = process.env.REACT_APP_API_URL;
+const baseUrl = "https://template-marketplace-backend.onrender.com/";
 console.log("API Base URL:", baseUrl);
 const API_BASE_URL = `${baseUrl}/api/products`; // replace with your API endpoint
 

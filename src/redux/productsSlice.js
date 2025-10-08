@@ -1,9 +1,9 @@
 // src/store/productSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
-const API_URL = "http://localhost:5000/api/products";
-
+const baseUrl = process.env.REACT_APP_API_URL;
+// const API_URL = "http://localhost:5000/api/products";
+const API_URL = `${baseUrl}/api/products`;
 // Async thunk to fetch products
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
